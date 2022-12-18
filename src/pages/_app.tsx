@@ -1,11 +1,14 @@
-import { CssBaseline } from '@mui/material'
+import Container from '@mui/material/Container'
+import CssBaseline from '@mui/material/CssBaseline'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <CssBaseline />
-      <Component {...pageProps} />
+      <Container>
+        <Component {...pageProps} />
+      </Container>
     </>
   )
 }
